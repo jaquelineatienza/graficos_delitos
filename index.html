@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dashboard</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar nav">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/81/Policia_bonaer_emblem.png"
+              alt="Bootstrap"
+              width="40"
+              height="50"
+            />
+          </a>
+          <h2 class="nav-text">Delitos Provincia BsAs</h2>
+        </div>
+      </nav>
+    </header>
+    <div class="informacion">
+      <h3 class="title_info">informacion</h3>
+      <div class="info_contenido">
+        <p>
+          El dashboard mostrará una comparación de los diferentes tipos de
+          delitos que ocurrieron en los años 2022 y 2023. Esto permitirá
+          analizar cómo cambiaron las tendencias delictivas entre estos dos
+          años, identificando qué tipos de delitos aumentaron, disminuyeron o se
+          mantuvieron relativamente estables. La visualización facilitará la
+          comprensión de la distribución de los delitos y sus posibles
+          implicaciones.
+        </p>
+        <img
+          src="https://img.freepik.com/vector-premium/portapapeles-informe-policial-boligrafo-hoja-informe-sello-policial-dorado-documento-legal-fino-pila-papeles-sello_169241-2792.jpg"
+          alt=""
+          srcset=""
+          class="img-texto"
+        />
+      </div>
+    </div>
+    <div class="contenedor_barra">
+      <div class="textos">
+        <div class="opcion">
+          <label for="campo">categoria:</label>
+          <select id="dato">
+            <option value="subtipo">tipo</option>
+            <option value="mes">mes</option>
+            <option value="barrios">barrio</option>
+          </select>
+        </div>
+
+        <h3 id="h3"></h3>
+      </div>
+      <div id="grafico"></div>
+    </div>
+    <div class="horario_histograma">
+      <h3 id="h3">Franja Horaria</h3>
+      <div id="grafico2"></div>
+    </div>
+    <h3 class="division">Grafico de torta</h3>
+    <div class="contenedor_torta">
+      <div class="uso_arma">
+        <h3>Uso de arma</h3>
+        <label for="campo">Año:</label>
+        <select id="anio_arma" onchange="actualizarGrafico()">
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+        </select>
+        <div id="grafico_arma"></div>
+      </div>
+      <div class="uso_moto">
+        <h3>Uso de moto</h3>
+        <label for="campo">Año:</label>
+        <select id="anio_moto" onchange="actualizarGrafico()">
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+        </select>
+        <div id="grafico_moto"></div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

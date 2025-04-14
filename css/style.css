@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+}
+
+.contenedor_torta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.img-texto {
+  width: 150px;
+  height: 150px;
+}
+.uso_moto {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 50;
+}
+.informacion {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 40;
+}
+.uso_arma {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 50;
+}
+.nav {
+  background-color: rgb(1, 118, 114);
+}
+.division {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 80;
+}
+
+.textos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 50;
+  gap: 10px;
+}
+
+.opcion {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+h2 {
+  text-align: center;
+  color: white;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 80;
+}
+.nav-text {
+  color: white;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 80;
+}
+
+.contenedor_barra {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 180px;
+}
+.horario_histograma {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 80;
+}
+.grafico {
+  margin-top: 10px;
+}
+.info_contenido {
+  margin-left: 140px;
+  margin-right: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.title_info {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 80;
+  margin-top: 60px;
+}
