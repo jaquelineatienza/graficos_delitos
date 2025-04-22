@@ -8,7 +8,7 @@ export function delitos_mes() {
 
     const todos = [...datos2022, ...datos2023];
 
-    // Agrupar por barrio y año
+    // Agrupar por mes y año
     const agrupado = d3.rollups(
       todos,
       (v) => v.length,
@@ -26,11 +26,8 @@ export function delitos_mes() {
       return obj;
     });
 
-    // Ordenar y quedarnos con los 15 más altos
-    data = data
-      .sort((a, b) => b.total - a.total)
-
-      .reverse(); // Para que el barrio con más delitos quede arriba en horizontal
+    // Ordenar de menor a mayor para que el mayor quede abajo (último)
+    data = data.sort((a, b) => a.total - b.total);
 
     const anios = ["2022", "2023"];
     const mes = data.map((d) => d.mes);
@@ -89,7 +86,7 @@ export function delitos_mes() {
       .attr("height", y1.bandwidth())
       .attr("fill", (d) => color(d.anio));
 
-    // Etiquetas con cantidad
+    // Etiquetas de cantidad
     svg
       .append("g")
       .selectAll("g")
@@ -114,6 +111,7 @@ export function delitos_mes() {
     svg
       .append("g")
       .attr("transform", `translate(${margin.left - 10},0)`)
+
       .call(d3.axisLeft(y0).tickSize(0))
       .selectAll("text")
       .style("font-size", "12px");

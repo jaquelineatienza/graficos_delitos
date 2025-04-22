@@ -75,25 +75,53 @@
     </div>
     <h3 class="division">Grafico de torta</h3>
     <div class="contenedor_torta">
+      <h3>Uso de arma</h3>
       <div class="uso_arma">
-        <h3>Uso de arma</h3>
-        <label for="campo">Año:</label>
-        <select id="anio_arma" onchange="actualizarGrafico()">
-          <option value="2023">2023</option>
-          <option value="2022">2022</option>
-        </select>
-        <div id="grafico_arma"></div>
-      </div>
-      <div class="uso_moto">
-        <h3>Uso de moto</h3>
-        <label for="campo">Año:</label>
-        <select id="anio_moto" onchange="actualizarGrafico()">
-          <option value="2023">2023</option>
-          <option value="2022">2022</option>
-        </select>
-        <div id="grafico_moto"></div>
+        <div class="graficos">
+          <h3>año:2023</h3>
+          <div id="grafico_arma"></div>
+        </div>
+        <div class="leyenda">
+          <div class="contenedor_leyenda">
+            <div class="leyenda_arma"></div>
+            <h2 class="texto_leyenda">sin arma </h2>
+          </div>
+          <div class="contenedor_leyenda">
+            <div class="leyenda_arma2"></div>
+            <h2 class="texto_leyenda">con arma</h2>
+        </div>
+        <div class="graficos">
+          <h3>año:2022</h3>
+          <div id="grafico_arma22"></div>
+        </div>
       </div>
     </div>
+    <div class="contenedor_torta2">
+      <h3>Uso de moto</h3>
+      
+      <div class="uso_moto">
+
+        <div class="graficos">
+          <h3>año: 2022</h3>
+          <div id="grafico_moto"></div>
+        </div>
+        <div class="leyenda">
+          <div class="contenedor_leyenda">
+            <div class="leyenda_moto"></div>
+            <h2 class="texto_leyenda">con moto </h2>
+          </div>
+          <div class="contenedor_leyenda">
+            <div class="leyenda_moto2"></div>
+            <h2 class="texto_leyenda">sin moto</h2>
+          </div>
+        </div>
+        <div class="graficos">
+          <h3>año: 2023</h3>
+          <div id="grafico_moto23"></div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"

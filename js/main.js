@@ -1,6 +1,8 @@
 import { delitos_subtipo } from "./delitos_subtipo.js";
 import { uso_arma } from "./uso_arma.js";
+import { uso_arma22 } from "./uso_arma23.js";
 import { uso_moto } from "./uso_moto.js";
+import { uso_moto23 } from "./uso_moto23.js";
 import { delitos_mes } from "./delitos_mes.js";
 import { delitos_horario } from "./delitos_horarios.js";
 import { delitos_barrios } from "./delitos_barrios.js";
@@ -42,6 +44,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   uso_arma();
+  uso_arma22();
   uso_moto();
+  uso_moto23();
   delitos_horario();
 });

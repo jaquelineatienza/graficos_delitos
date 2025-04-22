@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-.contenedor_torta {
+.uso_arma {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +14,38 @@ body {
   width: 150px;
   height: 150px;
 }
+.leyenda_moto {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 165, 159);
+}
+.leyenda_moto2 {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(19, 138, 156);
+}
+.texto_leyenda {
+  font-size: 12px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 50; /* Added font-variation-settings */
+}
+.leyenda_arma {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 165, 159);
+}
+.leyenda_arma2 {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(19, 138, 156);
+}
+.contenedor_leyenda {
+  display: flex;
+  flex-direction: row;
+}
 .uso_moto {
   font-size: 16px;
   text-align: center;
@@ -21,6 +53,14 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 50;
+}
+.uso_moto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 .informacion {
   font-family: "Merriweather", serif;
@@ -87,6 +127,22 @@ h2 {
   align-items: center;
   flex-direction: column;
   margin-right: 180px;
+}
+.contenedor_torta {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 80px;
+}
+.contenedor_torta2 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 80px;
 }
 .horario_histograma {
   margin-top: 30px;

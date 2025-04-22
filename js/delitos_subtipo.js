@@ -7,7 +7,7 @@ export function delitos_subtipo() {
     datos2023.forEach((d) => (d.anio = "2023"));
 
     const todos = [...datos2022, ...datos2023];
-
+    console.log(todos);
     const agrupado = d3.rollups(
       todos,
       (v) => v.length,
